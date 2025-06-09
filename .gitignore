@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*/__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+*.so
+
+# VS Code
+.vscode/
+
+# Environments
+venv/
