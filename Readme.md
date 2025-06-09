@@ -68,7 +68,8 @@ Best        Average     Worst       Memory      Stable
 n           n log n     n log n     n           No
 ```
 
-Ha demostrado ser mejor que std::sort (introsort) en general, aunque según la distribución de los datos la ventaja puede variar.
+Ha demostrado ser mejor que std::sort (introsort) en general, aunque según la distribución de los datos la ventaja puede variar. En el siguiente grafico extraido del repositorio original se puede evidenciar:
+![Distribucion vs performance](./graficos/verge.png)
 
 **Ska_sort:**
 
@@ -83,7 +84,7 @@ Aunque como es base radix, tiene un overhead superior.
 
 ## Comparación y Benchmarks
 
-Lo primero será determinar si estos son mejores que las implementaciones actuales de Python y numpy en distribuciones uniformes, las cuales utilizan timsort e introsort, algoritmos de ordenamiento probados y rápidos en cualquier caso. (Recordar que vergesort no es tan bueno para datos uniformes según el gráfico de comparación con C++/std).
+Lo primero será determinar si estos son mejores que las implementaciones actuales de Python y numpy en distribuciones uniformes, las cuales utilizan timsort e introsort, algoritmos de ordenamiento probados y rápidos en cualquier caso. (Recordar que vergesort saca tanta ventaja para datos uniformes según el gráfico de comparación con C++/std).
 
 Para ello se realizó un programa para ejecutar benchmarking, realizando pruebas con arreglos generados con entradas de distintos tipos y largos variables. Los resultados se muestran a continuación. El archivo de pruebas es `test_basic.py`.
 
